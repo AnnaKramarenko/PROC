@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//Функция вывода информации о животном
+//Функция вывода информации о фигуре
 void Out_Figure_3D(Figure_3D* F, ofstream& ofst);
 
 #endif // OUT_FIGURE_3D_H
