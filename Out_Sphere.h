@@ -7,6 +7,6 @@
 using namespace std;
 
 //Функция вывода информации о шаре
-void Out_Sphere(double Density, Sphere* S, ofstream& ofst);
+void Out_Sphere(double Density, int Temperature, Sphere* S, ofstream& ofst);
 
 #endif // OUT_SPHERE_H

@@ -25,6 +25,7 @@ Figure_3D* In_Figure_3D(ifstream& ifst) {
     }
 
     ifst >> F->Density; //—читываем данные о плотности материала фигуры
+    ifst >> F->Temperature; //—читываем температуру плавление/горени€ материала фигуры
 
     return F;
 }

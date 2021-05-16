@@ -7,6 +7,6 @@
 using namespace std;
 
 //Функция вывода информации о параллелепипеде
-void Out_Parallelepiped(double Density, Parallelepiped* P, ofstream& ofst);
+void Out_Parallelepiped(double Density, int Temperature, Parallelepiped* P, ofstream& ofst);
 
 #endif // OUT_PARALLELEPIPED_H

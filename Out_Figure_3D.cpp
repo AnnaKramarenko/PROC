@@ -5,10 +5,10 @@
 
 void Out_Figure_3D(Figure_3D* F, ofstream& ofst) {
     if (F->K == SPHERE) {
-        Out_Sphere(F->Density, (Sphere*)F->Obj, ofst); //Выводим информацию о шаре
+        Out_Sphere(F->Density, F->Temperature, (Sphere*)F->Obj, ofst); //Выводим информацию о шаре
     }
     else if (F->K == PARALLELEPIPED) {
-        Out_Parallelepiped(F->Density, (Parallelepiped*)F->Obj, ofst); //Выводим информацию о параллелепипеде
+        Out_Parallelepiped(F->Density, F->Temperature, (Parallelepiped*)F->Obj, ofst); //Выводим информацию о параллелепипеде
     }
     else if (F->K == TETRAHEDRON) {
         Out_Tetrahedron(F->Density, (Tetrahedron*)F->Obj, ofst); //Выводим информацию о тетраэдр
