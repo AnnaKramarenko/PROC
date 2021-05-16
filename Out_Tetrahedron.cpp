@@ -2,5 +2,5 @@
 
 void Out_Tetrahedron(double Density, Tetrahedron* T, ofstream& ofst) {
     ofst << "It's a Tetrahedron with Side length: " << T->A<< endl;
-    ofst << "Its Density is " << Density << endl << endl;
+    ofst << "Its Density is " << Density << endl;
 }
