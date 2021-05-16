@@ -1,6 +1,7 @@
 #include "In_Figure_3D.h"
 #include "In_Sphere.h"
 #include "In_Parallelepiped.h"
+#include "In_Tetrahedron.h"
 
 Figure_3D* In_Figure_3D(ifstream& ifst) {
     Figure_3D *F = new Figure_3D; //Выделяем память под новую фигуру
@@ -14,6 +15,10 @@ Figure_3D* In_Figure_3D(ifstream& ifst) {
     else if (K == 2) { //Если K == 2, то это параллелепипед
         F->K = PARALLELEPIPED; //Записывает то, что это параллелепипед
         F->Obj = In_Parallelepiped(ifst); //Считываем информацию о параллелепипедe
+    }
+    else if (K == 3) { //Если K == 3, то это тетраэдр
+        F->K = TETRAHEDRON; //Записывает то, что это тетраэдр
+        F->Obj = In_Tetrahedron(ifst); //Считываем информацию о тетраэдре
     }
     else {
         return 0;

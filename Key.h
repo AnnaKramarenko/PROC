@@ -4,7 +4,8 @@
 //Идентификатор фигуры
 enum Key {
     SPHERE, //Шар
-    PARALLELEPIPED //Параллелепипед
+    PARALLELEPIPED, //Параллелепипед
+    TETRAHEDRON //Тетраэдр
 };
 
 #endif // KEY_H
