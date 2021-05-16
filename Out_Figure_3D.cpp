@@ -11,7 +11,7 @@ void Out_Figure_3D(Figure_3D* F, ofstream& ofst) {
         Out_Parallelepiped(F->Density, F->Temperature, (Parallelepiped*)F->Obj, ofst); //Выводим информацию о параллелепипеде
     }
     else if (F->K == TETRAHEDRON) {
-        Out_Tetrahedron(F->Density, (Tetrahedron*)F->Obj, ofst); //Выводим информацию о тетраэдр
+        Out_Tetrahedron(F->Density, F->Temperature, (Tetrahedron*)F->Obj, ofst); //Выводим информацию о тетраэдр
     }
     else {
         ofst << "Incorrect element!" << endl;

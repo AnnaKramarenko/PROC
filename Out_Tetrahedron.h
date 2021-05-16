@@ -7,6 +7,6 @@
 using namespace std;
 
 //Функция вывода информации о тетраэдре
-void Out_Tetrahedron(double Density, Tetrahedron* T, ofstream& ofst);
+void Out_Tetrahedron(double Density, int Temperature, Tetrahedron* T, ofstream& ofst);
 
 #endif // OUT_SPHERE_H
