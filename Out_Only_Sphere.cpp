@@ -10,6 +10,7 @@ void Out_Only_Sphere(Container* Head, ofstream& ofst) {
         if (Temp->Cont->K == SPHERE) { //Проверка того, что фигура - шар
             ofst << i << ": ";
             Out_Figure_3D(Temp->Cont, ofst);
+            ofst << endl;
         }
 
         if (Temp->Next) {
